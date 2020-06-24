@@ -30,7 +30,7 @@ def logical_xor(stands):
              T +=1
          x = x | stands[i]
          i +=1
-    if T<2:
+    if T<n:
         return bool(x)
     else:
         return bool(0)
@@ -57,8 +57,8 @@ def logical_nand(*input):
     return not bool(x)
 
 
-stands = (1,1,1,1,1,1,1,1,1,1)
-print(logical_nand(stands))
+stands = (1,1,1,1,1,1,1,1,0,1,1,1)
+print(logical_xor(stands))
 
 
 
